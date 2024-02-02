@@ -14,30 +14,30 @@ body {
 }
 
 .header{
-    background: #0066ff;
-    line-height: 100px;
+    background: #323547;
+    height: 100px;
     width: 100%;
-    height: 10vh;
+    position: fixed;
 }
 .logo{
     color: #fff;
     font-size: 40px;
     line-height: 80px;
-    padding: 0 100px;
+    padding: 10px 100px;
 }
 .header ul li{
     display: inline-block;
-    margin: 0 10px;
+    margin: 30px 10px;
 }
 ul li a{
     color: #fff;
     text-decoration: none;
     font-size: 20px;
-    padding: 5px;
-    border-radius: 3px;
+    padding: 5px 10px;
+    border-radius: 20px;
 }
 a.active, a:hover{
-   background: #2c81ff;
+   background: #ef6603;
    transition: .5s;
 }
 #check{
@@ -45,10 +45,11 @@ a.active, a:hover{
 }
 .checkbtn{
     float: right;
-    margin-right: 20px;
+    margin-top: 40px;
     display: none;
+    margin-right: 20px;
 }
-@media (max-width:800px) {
+@media (max-width:1168px) {
     .checkbtn{
         display:block;
     }
@@ -57,7 +58,7 @@ a.active, a:hover{
         width: 100%;
         height: 100vh;
         background: #002255;
-        top: 76px;
+        top: 100px;
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -71,7 +72,8 @@ a.active, a:hover{
 
 }
 section{
-    background: url(asset/img/bg.png);
-    background-size:cover;
-    height: 500px;
+    background: url(/asset/img/bg.png);
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
 }
