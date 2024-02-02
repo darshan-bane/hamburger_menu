@@ -71,7 +71,7 @@ a.active, a:hover{
 
 }
 section{
-    background: url(img/bg.png);
+    background: url(asset/img/bg.png);
     background-size:cover;
-    height: calc(100vh - 80px);
+    height: 500px;
 }
