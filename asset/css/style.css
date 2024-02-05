@@ -136,6 +136,7 @@ ul .dd_item{
 ================================================== */
 .About_us{
     padding:50px 150px ;
+    overflow: hidden;
 }
 .aboutus_title h2{
     font-size:25px;
@@ -167,3 +168,57 @@ ul .dd_item{
 .aboutus_details p a:hover{
     color: #ffffff;
 }
+.aboutus_details ul{
+    width: 100%;
+    background: #fdfdfd;
+    top:0px;
+    left: 0%;
+    transition: all .5s;
+}
+
+
+/* =============================================
+                  tab section
+================================================== */
+.tab_section{
+    padding: 50px 150px;
+}
+.tab {
+    overflow: hidden;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ef6603;
+    color: #fff;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ef6603;
+    color: #fff;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+  
+  /* Display London tab content by default and make the London button active */
+  #London {
+    display: block;
+  }
+  

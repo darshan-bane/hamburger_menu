@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css">
     <link href="http://cdn.remixicon.com/releases/v1.1.2/remixicon.css" rel="stylesheet">
-    <script></script>
+    <script src="asset/js/script.js"></script>
     <title>Document</title>
 </head>
 
@@ -247,20 +247,67 @@
             <p>Who we are</p>
         </div>
         <div class="aboutus_details">
-            <div class="animated fadeInUp p-2">
+            <div class="animated fadeInUp col-lg-6 col-md-12 col-sm-12">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At repellendus, nesciunt maiores est vel
                     perspiciatis ipsam nihil voluptatem eum non</p>
                 <ul style="padding-left:0px; line-height: 35px;">
-                    <li style="font-size: 20px;"> <i class="fa-solid fa-check-double fa-lg" style="color: #ef6033;"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat </li>
-                    <li style="font-size: 20px;"> <i class="fa-solid fa-check-double fa-lg" style="color: #ef6033;"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat </li>
-                    <li style="font-size: 20px;"> <i class="fa-solid fa-check-double fa-lg" style="color: #ef6033;"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat </li>
+                    <li style="font-size: 20px;"> <i class="fa-solid fa-check-double fa-lg" style="color: #ef6033;"></i>
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat </li>
+                    <li style="font-size: 20px;"> <i class="fa-solid fa-check-double fa-lg" style="color: #ef6033;"></i>
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat </li>
+                    <li style="font-size: 20px;"> <i class="fa-solid fa-check-double fa-lg" style="color: #ef6033;"></i>
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat </li>
                 </ul>
             </div>
-            <div class="animated fadeInUp p-2">
+            <div class="animated fadeInUp col-lg-6 col-md-12 col-sm-12">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cupiditate atque aliquid magnam
-                    sequi ut veniam ratione adipisci molestiae perspiciatis</p>
-                    <p><a href="#">Learn More</a></p>
+                    sequi ut veniam ratione adipisci molestiae perspiciatis Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Dolor, explicabo?</p>
+                <p><a href="#">Learn More</a></p>
             </div>
+        </div>
+    </div>
+
+
+    <!-- ==================================================
+                           Tab section                    
+    =================================================== -->
+    <div class="col-lg-12 tab_section">
+        <div class="tab">
+            <button class="tablinks London" onclick="openCity(event, 'London')">London</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+        </div>
+
+        <div id="London" class="tabcontent">
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quia, ducimus repellat autem
+                    dolores veniam quo commodi perspiciatis consequuntur mollitia soluta eaque ab maiores accusantium
+                    quae inventore expedita sapiente, voluptate rem totam nobis. Perspiciatis, maiores doloremque
+                    provident a est obcaecati consequuntur, quis exercitationem eos necessitatibus tenetur nam harum
+                    debitis nesciunt!</p>
+            </div>
+            <div>
+                <img src="/asset/img/Screenshot 2024-02-02 170206.png" alt="">
+            </div>
+        </div>
+
+        <div id="Paris" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quia, ducimus repellat autem
+                dolores veniam quo commodi perspiciatis consequuntur mollitia soluta eaque ab maiores accusantium
+                quae inventore expedita sapiente, voluptate rem totam nobis. Perspiciatis, maiores doloremque
+                provident a est obcaecati consequuntur, quis exercitationem eos necessitatibus tenetur nam harum
+                debitis nesciunt!</p>
+        </div>
+
+        <div id="Tokyo" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quia, ducimus repellat autem
+                dolores veniam quo commodi perspiciatis consequuntur mollitia soluta eaque ab maiores accusantium
+                quae inventore expedita sapiente, voluptate rem totam nobis. Perspiciatis, maiores doloremque
+                provident a est obcaecati consequuntur, quis exercitationem eos necessitatibus tenetur nam harum
+                debitis nesciunt!</p>
         </div>
     </div>
 
