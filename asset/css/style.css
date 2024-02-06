@@ -5,18 +5,23 @@
 }
 body {
     font-family: poppins;
-    color: #444444;
+    color: var(--primary-color);
+    background: var(--bg-color);
 }
 
 .header ul{
     float: right;
     margin-right: 20px;
+    flex: 1;
+    text-align: right;
 }
 
 .header{
     background: #323547;
     height: auto;
     width: 100%;
+    position: fixed;
+    z-index: 99;
 }
 .logo{
     color: #fff;
@@ -170,7 +175,7 @@ ul .dd_item{
 }
 .aboutus_details ul{
     width: 100%;
-    background: #fdfdfd;
+    background: var(--bg-color);
     top:0px;
     left: 0%;
     transition: all .5s;
@@ -220,5 +225,21 @@ ul .dd_item{
   /* Display London tab content by default and make the London button active */
   #London {
     display: block;
+    overflow: hidden;
   }
   
+
+#icon{
+    cursor: pointer;
+    width: 2.5%;
+}
+
+:root{
+    --primary-color: #444444;
+    --bg-color:#fff;
+}
+
+.dark-theme{
+    --primary-color: #ffffff;
+    --bg-color:#1b1b1b;
+}
