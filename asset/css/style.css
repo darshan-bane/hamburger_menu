@@ -275,6 +275,7 @@ ul .dd_item {
     overflow: hidden;
     width: 100%;
     margin: auto;
+    text-align: center;
 }
 
 /* Style the buttons inside the tab */
@@ -282,9 +283,11 @@ ul .dd_item {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 20px 24px;
     transition: 0.3s;
     font-size: 17px;
+    margin: 0px 20px;
+    width: 30%;
 }
 
 /* Change background color of buttons on hover */
@@ -317,6 +320,7 @@ ul .dd_item {
     height:auto;
 }
 
+
 @media only screen and (max-width:1000px) and (min-width:100px){
     .tab_section {
         padding: 50px;
@@ -342,4 +346,79 @@ ul .dd_item {
 .dark-theme {
     --primary-color: #ffffff;
     --bg-color: #1b1b1b;
+}
+
+
+
+/* =============================================
+               Call to action
+================================================== */
+.Call_to_Action{
+    background: #323547;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 150px;
+}
+.call-content{
+
+    margin: auto;
+    color: #fff;
+    padding: 0px 50px 0px 0px;
+    margin-bottom: 0px;
+}
+.call-content2{
+    margin: auto;
+}
+.call-content2 a{
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 50px;
+    background-color: #ef6603;
+    font-weight: 600;
+}
+.call-content2 a:hover{
+    background: #fff;
+    color: #ef6603;
+}
+@media only screen and (max-width:1000px) and (min-width:100px){
+    .Call_to_Action{
+        display: block;
+        padding: 60px;
+    }
+    .call-content2{
+        margin-top: 40px;
+    }
+}
+
+/* =============================================
+              WHAT WE DO OFFER                  
+================================================= */
+#what_we_offer{
+    padding: 50px 150px;   
+}
+
+.card_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 30px;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 1px 1px 10px rgb(165, 165, 165);
+    padding: 16px;
+    border-radius: 7px;
+}
+
+@media only screen and (max-width:1000px) and (min-width:100px){
+    #what_we_offer{
+        padding: 50px;   
+    }
+    .card_container{
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    } 
 }
