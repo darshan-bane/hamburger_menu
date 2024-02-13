@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    ::selection{
+        color: white;
+        background: #ef6603;
+    }
 }
 
 body {
@@ -19,7 +23,8 @@ body {
 }
 
 .header {
-    background: #323547;
+    background: #32354781;
+    backdrop-filter: blur(5px); /* --------for blur background content -------*/
     height: auto;
     width: 100%;
     position: fixed;
@@ -119,7 +124,6 @@ ul .dd_item {
 
 .carousel-inner {
     width: 100%;
-    background: #323547;
 }
 
 .carousel-caption {
@@ -182,12 +186,13 @@ ul .dd_item {
 }
 
 .aboutus_title h2 {
-    font-size: 25px;
+    font-size: 16px;
     color: #818181;
+    letter-spacing: 5px;
 }
 
 .aboutus_title p {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 800;
 }
 
@@ -421,4 +426,119 @@ ul .dd_item {
     .card_container{
         grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
     } 
+}
+
+/* =============================================
+              portfolio                 
+================================================= */
+#portfolio{
+    padding: 50px 150px;   
+}
+.lightboxAnchor .row a:hover{
+    background: none;
+}
+.lightboxAnchor .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.lightboxAnchor .row img:hover{
+    transform: scale(1.02);
+    transition: 0.5s;
+    box-shadow: 1px 1px 10px rgb(165, 165, 165);
+}
+
+
+/* .lightboxAnchor .row a:hover::after{
+    content: "View Project Case Study";
+    color: var(--primary-color);
+    text-decoration: none !important;
+} */
+@media only screen and (max-width:1000px) and (min-width:100px){
+    #portfolio{
+        padding: 50px;   
+    }
+}
+
+
+/* =============================================
+              Testimonial                
+================================================= */
+#Testimonial{
+    padding: 50px 150px;   
+}
+.testimonialcard{
+    box-shadow: 1px 1px 10px rgba(175, 175, 175, 0.651); 
+    padding: 20px;
+    max-width: 420px;
+    width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:1000px) and (min-width:100px){
+    #Testimonial{
+        padding: 50px;   
+    }
+}
+
+/* =============================================
+                Pricing              
+================================================= */
+
+#Pricing{
+    padding: 50px 150px;
+}
+.pricing_card{
+    width: 100%;
+    height:auto ;
+    border: 2px solid #e4e4e4;
+    text-align: center;
+    border-radius: 7px;
+}
+.pricing_header h4{
+    color: #444444;
+}
+.pricing_header{
+    background: #e4e4e4;
+    padding: 20px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.pricing_button{
+    background: #e4e4e4;
+    padding: 20px;
+    border-radius: 0px 0px 7px 7px;
+    
+}
+.pricing_button p a{
+    background: #ef6603;
+    padding: 10px 30px;
+    width:100%;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+}
+.pricing_button p a:hover{
+    background: #ff7e21;
+}
+.pricing_lists ul li {
+    list-style: none;
+    line-height: 40px;
+}
+.pricing_money{
+    padding: 20px;
+}
+.pricing_container{
+    display: flex;
+}
+@media only screen and (max-width:1000px) and (min-width:100px){
+    #Pricing{
+        padding: 50px;   
+    }
+    .pricing_container{
+        display: block;
+    }
+    .pricing_lists ul li{
+        
+    }
 }
