@@ -150,6 +150,12 @@ ul .dd_item {
     border-radius: 20px;
 }
 
+@media screen and (max-width:600px) {
+    .carousel-item img{
+        height: 620px !important;
+    }
+}
+
 .dropdown-toggle {
     margin-top: -5px;
 }
@@ -593,11 +599,11 @@ ul .dd_item {
 .accordion-button:hover{
     color: #ef6603 ;
 }
-
 .accordion-button:focus{ 
     background: none;
     box-shadow: none;
 }
+
 @media only screen and (max-width:1000px) and (min-width:100px){
     #FAQs{
         padding: 50px;
