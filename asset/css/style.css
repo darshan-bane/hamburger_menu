@@ -12,6 +12,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: var(--primary-color);
     background: var(--bg-color);
+    overflow-x: hidden;
 }
 
 .header ul {
@@ -88,7 +89,7 @@ a:hover {
         width: 100% !important;
         height: 100vh;
         background: #223552;
-        top: 50px;
+        top: 60px;
         left: -100%;
         text-align: center !important;
         transition: all .5s;
@@ -330,8 +331,25 @@ ul .dd_item {
     .tab_section {
         padding: 50px;
     }
+    .tab{
+        text-align: justify;
+    }
+    .tab button{
+        width: 100%;
+    }
+    .tab_section .tabimage img{
+        display: none;
+    }
+    .tookyo, .paaris, .loodon{
+        width: 100% !important;
+    }
+}
 
-    
+@media only screen and (max-width:1580px) and (min-width:1000px){
+    .tab button{
+        width: 20%;
+    }
+
 }
 
 /* =============================================
@@ -583,6 +601,145 @@ ul .dd_item {
 }
 @media only screen and (max-width:1000px) and (min-width:100px){
     #FAQs{
+        padding: 50px;
+    }
+}
+
+/* =============================================
+               FAQs             
+================================================= */
+
+#team{
+    padding: 50px 150px;
+    
+}
+.team_container{
+    display: flex;
+    width: 100%;
+}
+.team_member{
+    padding: 10px;
+}
+.team_member:hover{
+    box-shadow: 1px 1px 10px rgba(175, 175, 175, 0.651);
+    transition: .3s;
+}
+.team_member img{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+/* .team_member .social{
+    position: absolute;
+    margin-top: -44px;
+    margin-left: 4%;
+    background: #fff;
+    padding: 10px;
+    visibility: hidden;
+    letter-spacing: 5px;
+    transition: visibility 1s;
+}
+.team_member:hover .social{
+    visibility: visible;
+
+} */
+.team_member .social {
+    position: absolute;
+    margin-top: -200px;
+    background: #fff;
+    padding: 5px;
+    visibility: hidden;
+    opacity: 0; /* Initially hide with opacity */
+    letter-spacing: 5px;
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+.team_member .social a{
+    background: none;
+    display: block;
+    margin: 5px;
+}
+.team_member:hover .social {
+    visibility: visible;
+    opacity: 1; /* Show with opacity */
+}
+
+.team_member .team_info{
+    padding: 10px;
+    background: var(--bg-color);
+}
+@media only screen and (max-width:1000px) and (min-width:100px){
+    #team{
+        padding: 50px;
+    }
+    .team_member .social {
+        transform: translateY(50% 50%);
+    }
+}
+
+
+
+
+/* =============================================
+               Contact Us        
+================================================= */
+
+#contact_us{
+    padding: 50px 150px;
+}
+.form_container{
+    display: flex;
+}
+
+.contact ul li{
+    display: flex;
+}
+.contact_form form input, textarea{
+    box-shadow: none !important;
+    border-radius: 0px !important;
+}
+.contact_form form button{
+     background: #ef6603;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 50px;
+}
+.contact_form form button:hover{
+    background: #f87314;
+}
+.contact_form form button:focus{
+    background: #f87314;
+}
+@media only screen and (max-width:1000px) and (min-width:100px){
+    #contact_us{
+        padding: 50px;
+    }
+    .form_container{
+        display: block;
+    }
+    
+}
+
+
+/* =============================================
+               Contact Us        
+================================================= */
+
+#footer{
+    padding: 50px 150px;
+    background: #1f2027;
+    text-align: center;
+    color: #fff;
+}
+#footer ul li{
+    list-style: none;
+    display: inline-block;
+}
+#footer ul a{
+    background: none;
+    margin: 5px;
+}
+@media only screen and (max-width:1000px) and (min-width:100px){
+    #footer{
         padding: 50px;
     }
 }
