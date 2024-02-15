@@ -182,7 +182,7 @@ ul .dd_item {
                   About Us
 ================================================== */
 .About_us {
-    padding: 50px 150px;
+    padding: 100px 150px;
     overflow: hidden;
 }
 
@@ -274,7 +274,7 @@ ul .dd_item {
                   tab section
 ================================================== */
 .tab_section {
-    padding: 50px 150px;
+    padding: 0px 150px;
 }
 
 .tab {
@@ -420,7 +420,7 @@ ul .dd_item {
               WHAT WE DO OFFER                  
 ================================================= */
 #what_we_offer{
-    padding: 50px 150px;   
+    padding: 100px 150px;   
 }
 
 .card_container{
@@ -450,7 +450,7 @@ ul .dd_item {
               portfolio                 
 ================================================= */
 #portfolio{
-    padding: 50px 150px;   
+    padding: 100px 150px;   
 }
 .lightboxAnchor .row a:hover{
     background: none;
@@ -464,7 +464,6 @@ ul .dd_item {
     transition: 0.5s;
     box-shadow: 1px 1px 10px rgb(165, 165, 165);
 }
-
 
 /* .lightboxAnchor .row a:hover::after{
     content: "View Project Case Study";
@@ -482,7 +481,7 @@ ul .dd_item {
               Testimonial                
 ================================================= */
 #Testimonial{
-    padding: 50px 150px;   
+    padding: 100px 150px;   
 }
 .testimonialcard{
     box-shadow: 1px 1px 10px rgba(207, 207, 207, 0.651); 
@@ -508,7 +507,7 @@ ul .dd_item {
 ================================================= */
 
 #Pricing{
-    padding: 50px 150px;
+    padding: 100px 150px;
 }
 .pricing_card{
     width: 100%;
@@ -582,7 +581,7 @@ ul .dd_item {
 ================================================= */
 
 #FAQs{
-    padding: 50px 150px;
+    padding: 100px 150px;
 }
 .accordion-item{
     border-bottom: 1px solid #c0c0c0 !important;
@@ -610,7 +609,7 @@ ul .dd_item {
 ================================================= */
 
 #team{
-    padding: 50px 150px;
+    padding: 100px 150px;
     
 }
 .team_container{
@@ -684,7 +683,7 @@ ul .dd_item {
 ================================================= */
 
 #contact_us{
-    padding: 50px 150px;
+    padding: 100px 150px;
 }
 .form_container{
     display: flex;
@@ -725,7 +724,7 @@ ul .dd_item {
 ================================================= */
 
 #footer{
-    padding: 50px 150px;
+    padding: 100px 150px;
     background: #1f2027;
     text-align: center;
     color: #fff;
