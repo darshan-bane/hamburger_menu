@@ -7,12 +7,14 @@
         background: #ef6603;
     }
 }
-
+html{
+    overflow-x: hidden !important;
+}
 body {
     font-family: 'Open Sans', sans-serif;
     color: var(--primary-color);
     background: var(--bg-color);
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 .fa-bars:before, .fa-navicon:before{
     margin-left: -64px;
